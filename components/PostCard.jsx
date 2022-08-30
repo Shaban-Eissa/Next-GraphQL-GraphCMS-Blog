@@ -32,7 +32,7 @@ const PostCard = ({ post }) => {
             src={post.author.photo.url}
           />
 
-          <p className="inline align-middle text-gray-700 ml-2 text-sm md:text-lg">
+          <p className="inline align-middle text-pink-500 ml-2 text-sm md:text-lg">
             {post.author.name}
           </p>
         </div>
@@ -52,7 +52,7 @@ const PostCard = ({ post }) => {
               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-          <span>{moment(post.createdAt).format("MMM DD, YYYY")}</span>
+          <span className="text-pink-500">{moment(post.createdAt).format("MMM DD, YYYY")}</span>
         </div>
       </div>
 
